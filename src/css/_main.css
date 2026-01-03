@@ -67,7 +67,7 @@ main {
   color: var(--neutral-900);
 }
 
-@media (width > 768px) {
+@media (width > 48rem) {
   main {
     padding-block: 12.5vh;
   }

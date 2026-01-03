@@ -1,6 +1,6 @@
 .input-style {
-  padding: 16px;
-  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 0.5rem;
   border: 0.0625rem solid var(--neutral-900);
   transition: border-color .3s ease-out;
 
@@ -32,7 +32,7 @@
     'submit'
   ;
 
-  padding: clamp(24px, 5vw, 2.5rem);
+  padding: clamp(1.5rem, 5vw, 2.5rem);
   border-radius: 1rem;
   background-color: var(--neutral-100);
 
@@ -173,9 +173,9 @@
 
 .form__submit {
   grid-area: submit;
-  padding: 19.2px;
+  padding: 1.2rem;
   font-size: 1.1875rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: var(--neutral-100);
   background-color: var(--primary-green-600);
   transition: background-color .3s ease-out;

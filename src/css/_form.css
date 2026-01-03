@@ -185,6 +185,11 @@
       background-color: var(--primary-green-900);
     }
   }
+
+  &:focus {
+    outline: 0.0625rem solid var(--primary-green-900);
+    outline-offset: 3px;
+  }
 }
 
 .form__submit--inactive {

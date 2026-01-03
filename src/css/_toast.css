@@ -1,5 +1,4 @@
 [popover] {
-  /* 1. Начальное состояние (когда закрыт) */
   opacity: 0;
   transform: translateY(3.5rem);
   transition:

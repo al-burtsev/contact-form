@@ -1,0 +1,49 @@
+[popover] {
+  /* 1. Начальное состояние (когда закрыт) */
+  opacity: 0;
+  transform: translateY(3.5rem);
+  transition:
+    opacity .5s,
+    transform .5s,
+    display .5s allow-discrete,
+    overlay .5s allow-discrete;
+}
+
+[popover]:popover-open {
+  opacity: 1;
+  transform: translateY(1.5rem);
+}
+
+@starting-style {
+  [popover]:popover-open {
+    opacity: 0;
+    transform: translateY(3.5rem);
+  }
+}
+
+[popover]:not(:popover-open) {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+
+.toast {
+  margin-inline: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: var(--neutral-100);
+  background-color: var(--neutral-900);
+  transform: translateY(1.5rem);
+}
+
+.toast__title {
+  margin-block-end: .5rem;
+  padding-left: 2.5rem;
+  background-image: url(../images/icon-success-check.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.toast__descr {
+  color: var(--neutral-100);
+}

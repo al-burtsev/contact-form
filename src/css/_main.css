@@ -1,0 +1,74 @@
+:root {
+  --primary-green-200: hsl(148, 38%, 91%);
+  --primary-green-600: hsl(169, 82%, 27%);
+  --primary-green-900: hsl(171, 83%, 14%);
+  --primary-red: hsl(0, 66%, 54%);
+  --neutral-100: hsl(0, 0%, 100%);
+  --neutral-500: hsl(186, 15%, 59%);
+  --neutral-900: hsl(187, 24%, 22%);
+
+  --font-family: "Karla", sans-serif;
+
+  --content-width: 45.9375rem;
+  --container-offset: 1rem;
+  --container-width: 100% - (var(--container-offset) * 2);
+
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: var(--neutral-100);
+  background-color: var(--primary-green-600);
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100vh;
+
+  background-color: var(--primary-green-200);
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 0.0625rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 0.0625rem;
+}
+
+.container {
+  width: min(var(--content-width), var(--container-width));
+  margin-inline: auto;
+}
+
+main {
+  padding-block: 1.925rem;
+}
+
+.wrapper {
+  width: min(var(--content-width), var(--container-width));
+  margin-inline: auto;
+}
+
+.title {
+  font-size: 1.875rem;
+  color: var(--neutral-900);
+}
+
+@media (width > 768px) {
+  main {
+    padding-block: 12.5vh;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+  <title>Contact form | Frontend Mentor</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <script type="module" src="/src/js/main.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1 class="sr-only">Contact form component</h1>
+    <section class="contact">
+      <div class="wrapper">
+        <form class="form" action="" method="post" novalidate>
+          <h2 class="title form__title">Contact Us</h2>
+          <div class="form__field">
+            <label class="form__label" for="first_name">First Name <sup class="form__label-sign">*</sup></label>
+            <input class="input-style" type="text" name="first_name" id="first_name" required minlength="2"
+              autocomplete="given-name" aria-describedby="first_name-error">
+            <p class="form__error" id="first_name-error" aria-live="polite" role="alert"></p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="last_name">Last Name <sup class="form__label-sign">*</sup></label>
+            <input class="input-style" type="text" name="last_name" id="last_name" required minlength="2"
+              aria-describedby="last_name-error">
+            <p class="form__error" id="last_name-error" aria-live="polite" role="alert"></p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="email">Email Address <sup class="form__label-sign">*</sup></label>
+            <input class="input-style" type="email" name="email" id="email" autocomplete="email" required
+              aria-describedby="email-error">
+            <p class="form__error" id="email-error" aria-live="polite" role="alert"></p>
+          </div>
+          <div class="form__field">
+            <fieldset class="form__fieldset" aria-describedby="query-type-error">
+              <legend class="form__fieldset-legend">Query Type <sup class="form__label-sign">*</sup></legend>
+              <div class="input-style form__fieldset-item">
+                <label class="form__label  form__label--radio" for="query-type_1">General Enquiry</label>
+                <input class="form__radio" type="radio" name="query-type" id="query-type_1" required>
+              </div>
+              <div class="input-style form__fieldset-item">
+                <label class="form__label form__label--radio" for="query-type_2">Support Request</label>
+                <input class="form__radio" type="radio" name="query-type" id="query-type_2" required>
+              </div>
+            </fieldset>
+            <p class="form__error" id="query-type-error" aria-live="polite" role="alert"></p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="message">Message <sup class="form__label-sign">*</sup></label>
+            <textarea class="input-style form__textarea" name="message" id="message" minlength="10"
+              aria-describedby="message-error" required></textarea>
+            <p class="form__error" id="message-error" aria-live="polite" role="alert"></p>
+          </div>
+          <div class="form__field form__field--checkbox">
+            <input class="form__checkbox input-style" type="checkbox" id="agreement" name="agreement" required
+              aria-describedby="agreement">
+            <label class="form__label" for="agreement">I consent to being contacted by the team <sup
+                class="form__label-sign">*</sup></label>
+            <p class="form__error" id="agreement-error" aria-live="polite" role="alert"></p>
+          </div>
+          <button type="submit" class="form__submit">Submit</button>
+        </form>
+        <div class="toast" id="toast" popover="manual" role="alert" aria-live="assertive" aria-atomic="true">
+          <h3 class="toast__title">Message Sent!</h3>
+          <p class="toast__descr">Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

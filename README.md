@@ -49,4 +49,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@al-burtsev](https://www.frontendmentor.io/profile/al-burtsev)
-- TG - [@al_burtsevv](https://www.twitter.com/yourusername)
+- TG - [@al_burtsevv](https://t.me/al_burtsevv)
